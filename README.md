@@ -2,7 +2,7 @@
 Fintech team 17 project is a  Peer-to-peer payment application that allows users to make purchases using any major credit, debit, or gift card network, along with bank account information via third-party APIs like Stripe or PayPal, on Android smartphones or tablets.
 
 
-# ================MOBILE PAYMENT PLATFORM=====================
+# ===MOBILE PAYMENT PLATFORM===
 
 
 There are two ideas we are considering:
