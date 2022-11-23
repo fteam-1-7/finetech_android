@@ -1,6 +1,8 @@
 # finetech_android
 
-![image](https://user-images.githubusercontent.com/104723328/203627869-5e886ec2-9096-4b8b-84c2-b3ff04354b2e.png)
+
+![image](https://user-images.githubusercontent.com/104723328/203658930-f1a98e97-167a-49a5-a527-6b474c1b4331.png)
+
 
 FIREBASE AUTHENTICATION
 A mobile payment that does the transfer of money from one currency to another currency rides can be summarized as followed....
