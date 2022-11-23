@@ -19,9 +19,14 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.team17.fintech_team_17.databinding.ActivityLoginBinding
 
+import android.content.Intent
+
+
 import com.team17.fintech_team_17.R
 import com.team17.fintech_team_17.data.LoginDataSource
 import com.team17.fintech_team_17.data.LoginRepository
+import com.team17.fintech_team_17.ui.dashboard.ActivityDashboard
+import com.team17.fintech_team_17.ui.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -43,6 +48,8 @@ class LoginActivity : AppCompatActivity() {
         val password = binding.password
         val login = binding.login
         val loading = binding.loading
+
+        val signup = binding.signup
 
 
         loginViewModel = LoginViewModel(LoginRepository(LoginDataSource()))
@@ -74,7 +81,7 @@ class LoginActivity : AppCompatActivity() {
             setResult(Activity.RESULT_OK)
 
             //Complete and destroy login activity once successful
-            finish()
+            //finish()
         })
 
         username.afterTextChanged {
@@ -108,7 +115,17 @@ class LoginActivity : AppCompatActivity() {
             login.setOnClickListener {
                 loading.visibility = View.VISIBLE
                 loginViewModel.login(username.text.toString(), password.text.toString())
+
             }
+            
+
+        }
+
+        signup.setOnClickListener {
+            val registerIntent = Intent(this, RegisterActivity::class.java)
+            startActivity(registerIntent)
+            finish()
+
         }
 
         print("==============================")
@@ -122,6 +139,10 @@ class LoginActivity : AppCompatActivity() {
                     Log.d(ContentValues.TAG, "signInWithEmail:success")
                     val user = auth.currentUser
                     print(user?.uid);
+
+
+
+
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(ContentValues.TAG, "signInWithEmail:failure", task.exception)
@@ -143,6 +164,7 @@ class LoginActivity : AppCompatActivity() {
 
 
 
+
     private fun updateUiWithUser(model: LoggedInUserView) {
         val welcome = getString(R.string.welcome)
         val displayName = model.displayName
@@ -152,6 +174,9 @@ class LoginActivity : AppCompatActivity() {
             "$welcome $displayName",
             Toast.LENGTH_LONG
         ).show()
+
+        val dashboardIntent = Intent(this, ActivityDashboard::class.java)
+        startActivity(dashboardIntent)
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
