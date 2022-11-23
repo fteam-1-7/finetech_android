@@ -48,12 +48,14 @@ class RegisterActivity : AppCompatActivity() {
                 //Return to Login screen
                 val loginIntent = Intent(this, LoginActivity::class.java)
                 startActivity(loginIntent)
+                finish()
             }
         }
 
         btnSignin.setOnClickListener{
             val loginIntent = Intent(this, LoginActivity::class.java)
             startActivity(loginIntent)
+            finish()
         }
     }
 

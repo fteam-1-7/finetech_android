@@ -124,6 +124,7 @@ class LoginActivity : AppCompatActivity() {
         signup.setOnClickListener {
             val registerIntent = Intent(this, RegisterActivity::class.java)
             startActivity(registerIntent)
+            finish()
 
         }
 
