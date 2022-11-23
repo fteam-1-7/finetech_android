@@ -8,10 +8,17 @@
         <entry key="..\:/Android_project/fintech/app/src/main/res/drawable/edit_text_background.xml" value="0.1235" />
         <entry key="..\:/Android_project/fintech/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.10078125" />
         <entry key="..\:/Android_project/fintech/app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="..\:/Users/Seleb/AndroidStudioProjects/finetech_android/app/src/main/res/layout/activity_dashboard.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Seleb/AndroidStudioProjects/finetech_android/app/src/main/res/layout/activity_dashboard2.xml" value="0.2359375" />
+        <entry key="..\:/Users/Seleb/AndroidStudioProjects/finetech_android/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/Seleb/AndroidStudioProjects/finetech_android/app/src/main/res/layout/activity_register.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Seleb/AndroidStudioProjects/finetech_android/app/src/main/res/layout/content_activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/Seleb/AndroidStudioProjects/finetech_android/app/src/main/res/layout/dashboard_fragment_second.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Seleb/AndroidStudioProjects/finetech_android/app/src/main/res/layout/fragment_first.xml" value="0.25" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
