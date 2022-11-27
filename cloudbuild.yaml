@@ -25,6 +25,13 @@
 
 
 steps:
-- name: gcr.io/cloud-builders/docker
-  args: ['build', '-t', 'gcr.io/fintech-project-369023/gradle', '--build-arg=JAR_FILE=build/libs/build-artifact', '.']
-images: ['gcr.io/fintech-project-369023/gradle']
+- name: 'gradle'
+  entrypoint: gradle
+  args: ['test']
+ - name: 'gradle'
+   entrypoint: gradle
+   args: ['assemble']
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['build', '-t', 'gcr.io/fintech-project-369023/fintech-build', '--build-arg=JAR_FILE=build/libs/fintech-jar', '.']
+ images: ['gcr.io/fintech-project-369023/fintech-build']  
+
