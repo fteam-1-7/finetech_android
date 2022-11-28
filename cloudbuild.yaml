@@ -1,8 +1,8 @@
 # cloudbuild.yaml
-#steps:
-  # Set a persistent volume according to /cloud-build/docs/build-config (search for volumes)
- # - name: 'ubuntu'
-  #  volumes:
+steps:
+   Set a persistent volume according to /cloud-build/docs/build-config (search for volumes)
+  - name: 'ubuntu'
+   volumes:
     - name: 'vol1'
       path: '/persistent_volume'
     args: ['cp', '-a', '.', '/persistent_volume']
