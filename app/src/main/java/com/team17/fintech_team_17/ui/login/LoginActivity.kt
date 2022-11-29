@@ -3,7 +3,6 @@ package com.team17.fintech_team_17.ui.login
 import android.app.Activity
 import android.content.ContentValues
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
@@ -112,6 +111,8 @@ class LoginActivity : AppCompatActivity() {
                 false
             }
 
+
+
             login.setOnClickListener {
                 loading.visibility = View.VISIBLE
                 loginViewModel.login(username.text.toString(), password.text.toString())
@@ -140,6 +141,9 @@ class LoginActivity : AppCompatActivity() {
                     val user = auth.currentUser
                     print(user?.uid);
 
+                    val dashboardIntent = Intent(this, ActivityDashboard::class.java)
+                    startActivity(dashboardIntent)
+
 
 
 
@@ -152,14 +156,14 @@ class LoginActivity : AppCompatActivity() {
             }
     }
 
-//    public override fun onStart() {
-//        super.onStart()
-//        // Check if user is signed in (non-null) and update UI accordingly.
-//        val currentUser = auth.currentUser
-//        if(currentUser != null){
-//            //reload();
-//        }
-//    }
+    public override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        if(currentUser != null){
+            startActivity(Intent(this, RegisterActivity::class.java))
+       }
+    }
 
 
 
@@ -175,13 +179,14 @@ class LoginActivity : AppCompatActivity() {
             Toast.LENGTH_LONG
         ).show()
 
-        val dashboardIntent = Intent(this, ActivityDashboard::class.java)
-        startActivity(dashboardIntent)
+
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
         Toast.makeText(applicationContext, errorString, Toast.LENGTH_SHORT).show()
     }
+
+
 }
 
 /**

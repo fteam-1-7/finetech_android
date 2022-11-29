@@ -14,6 +14,15 @@
         android:theme="@style/AppTheme.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".Dashboard_PaymentHistoryList"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.register.RegisterActivity"
             android:exported="false" />
         <activity
@@ -22,7 +31,7 @@
             android:label="@string/title_activity_dashboard"
             android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
         <activity
-            android:name=".ui.login.LoginActivity"
+            android:name=".ui.loginTwo.LoginTwoActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
