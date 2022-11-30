@@ -1,35 +1,102 @@
-# finetech_android
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+</p>
+
+<h3 align="center">FINTECH PROJECT FOR FINTECH TEAM 17</h3>
 
 
-![image](https://user-images.githubusercontent.com/104723328/203658930-f1a98e97-167a-49a5-a527-6b474c1b4331.png)
+<p align="center"> Few lines describing your project.
+    <br> 
+</p>
+
+## 📝 Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [Contributing](/CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
+
+## 🧐 About <a name = "about"></a>
+
+Write about 1-2 paragraphs describing the purpose of your project.
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them.
+
+```
+Give examples
+```
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running.
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo.
+
+## 🔧 Running the tests <a name = "tests"></a>
+
+Explain how to run the automated tests for this system.
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## 🎈 Usage <a name="usage"></a>
+
+Add notes about how to use the system.
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+Add additional notes about how to deploy this on a live system.
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [Firestore](https://firebase.google.com/products/firestore) - Database
+- [Firebase](https://firebase.google.com/products-build) - Authentication
+- [VueJs](https://vuejs.org/) - Web Framework
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@bolexs](https://github.com/bolexs) - Deployment 
 
 
-FIREBASE AUTHENTICATION
-A mobile payment that does the transfer of money from one currency to another currency rides can be summarized as followed....
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-User Authentication ==> deposit/withdraw money (credit/debit) ==> conversion of the money to the currency you want to transfer the money to (the rates changes daily) ==> transaction initiated to the beneficiary's account ==> transaction completed and beneficiary receives payment.
-
-BACKGROUND
-Technology is one of the liveliest exposure that have happened to man. It keeps looking for ways to make human's life easy.
-
-Mobile Payment Platform is a P2P (person to person) transaction solution. It handles deposit/credit of money into the holder's account.
-
-PROJECT COMPONENT
-*Android Application
-*Firebase: API & Authentication
-*VM to host the Application
-*Google Cloud Platform
-*Stripe
-
-**ANDROID APPLICATION
-The Android Application is built and compiled by Kotlin. It will be deployed/hosted on a VM in our GCP environment. The application is an interface for the users (registered or new) to access his account.
-
-The application has various interface that contains the sign up page, the login page, user's personal transaction page, and so on. Screenshots of the application interface will be shared below.
-
-**Firebase: API & Authentication
-Firebase is a Google Cloud Platform resource that handles authentication, troubleshooting and monitoring amongst others. The authentication integration of the Application to the firebase authentitication service is going to be implemented via .................
-
-**Google Cloud Platform
-No solution will exist independently off an infrastructure - private or cloud solution. Mobile Payment System will be hosted on pne of the best cloud solution - Google Cloud Platform (GCP). We will also host our CI/CD (Continuos integration and continuos deployment) model on GCP to facilitate a seamless integration/deployment of our solution to the resource hosting our solution.
-
-**Stripe
+- Hat tip to anyone whose code was used
+- Inspiration
+- References
