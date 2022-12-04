@@ -23,7 +23,9 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Technology is one of the liveliest exposure that have happened to man. It keeps looking for ways to make human's life easy.
+
+Mobile Payment Platform is a P2P (person to person) transaction solution. It handles deposit/credit of money into the holder's account.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -89,11 +91,16 @@ Add additional notes about how to deploy this on a live system.
 - [Firebase](https://firebase.google.com/products-build) - Authentication
 - [VueJs](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
+- [README.md](https://github.com/fteam-1-7/finetech_android/edit/main/README.md) - Documentation
 
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@bolexs](https://github.com/bolexs) - Deployment
 - [@iblueblood](https://github.com/iblueblood) - Integration and Documentation
+- [@gabafo1](https://github.com/gabafo1) - Integration and Secretary
+- [@Maroa01](https://github.com/Maroa01) - Integration
+- [@MohammedMahmmoud](https://github.com/MohammedMahmmoud) - Developer
+- [@Sel3bRr-T](https://github.com/Sel3bRr-T) - Developer
 
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
