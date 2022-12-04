@@ -92,7 +92,8 @@ Add additional notes about how to deploy this on a live system.
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@bolexs](https://github.com/bolexs) - Deployment 
+- [@bolexs](https://github.com/bolexs) - Deployment
+- [@iblueblood](https://github.com/iblueblood) - Integration and Documentation
 
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
